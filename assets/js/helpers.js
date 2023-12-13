@@ -131,7 +131,7 @@ export function getShoppingCartInLocalStorage() {
 }
 
 // remove shopping cart element in localStorage
-export function removeShoppingCartEltInLocalStorage(cartId) {
+export function removeShoppingCartItemInLocalStorage(cartId) {
     let myCart = getShoppingCartInLocalStorage();
     if (myCart && myCart.length > 0) {
         myCart = myCart.filter(cart => cart.id !== cartId);

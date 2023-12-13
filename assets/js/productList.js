@@ -4,7 +4,8 @@ import * as helpers from './helpers.js';
 helpers.updateCartCounterStatus('cartBadgeId');
 
 // const testElt = document.createElement('div');
-// testElt.classList.add("col.mb-5");
+// testElt.classList.add("col", "mb-5");
+// testElt.classList.add("py-2");
 // testElt.innerHTML = "<span>Hello</span>";
 // console.log(testElt);
 

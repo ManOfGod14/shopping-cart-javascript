@@ -85,7 +85,7 @@ function updateShoppingCartElements(event) {
                 const removeConfirmation = confirm("Êtes-vous sûr de vouloir supprimer cet article du panier ?");
                 if(removeConfirmation) {
                     if(helpers.removeElementByIdInDOM('idCartItemTr'+ dataCartItemIdValue, 'shoppingCartListId')) {
-                        helpers.removeShoppingCartEltInLocalStorage(dataCartItemIdValue);
+                        helpers.removeShoppingCartItemInLocalStorage(dataCartItemIdValue);
                         helpers.updateCartCounterStatus('cartBadgeId'); // mise à jour du compteur du panier
                         // helpers.updateShoppingCartTotalAmount('totalAmountId');
                     }
